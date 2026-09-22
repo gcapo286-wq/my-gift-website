@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هدية خاصة</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #16001f, #45002f);
+            color: white;
+        }
+
+        .card {
+            padding: 35px;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 25px;
+            background: rgba(255,255,255,0.1);
+            box-shadow: 0 0 30px rgba(255,0,150,0.3);
+        }
+
+        h1 {
+            color: #ff69b4;
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        button {
+            padding: 14px 25px;
+            border: none;
+            border-radius: 30px;
+            background: #ff3d9a;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ff1493;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>هدية خاصة ليك ❤️</h1>
+
+        <p>
+            عملتلك الموقع ده عشان أقولك
+            إنك شخص مميز جدًا.
+        </p>
+
+        <button onclick="showMessage()">
+            افتح هديتك
+        </button>
+
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText =
+                "دي مجرد بداية هديتك ❤️";
+        }
+    </script>
+
+</body>
+</html>
